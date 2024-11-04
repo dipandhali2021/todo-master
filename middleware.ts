@@ -9,7 +9,12 @@ const publicRoutes= [
 
 export default authMiddleware({
   publicRoutes,
-  async 
+  // async afterAuth(auth,req) {
+  //   //handle unauth user trying to access protected routes
+  //   if(!auth.userId && !publicRoutes.includes(req.nextUrl.pathname)){
+
+  //   }
+  }
 });
 
 export const config = {
